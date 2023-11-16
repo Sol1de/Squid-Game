@@ -52,7 +52,6 @@
     // classe utils 
     abstract class Utils {
         abstract public function randomizeChoice();
-        abstract public function cheatOrNot();
     }
 
 
@@ -229,11 +228,6 @@
 
         public function randomizeChoice() {
             return rand(0, 1);
-        }
-
-        public function cheatOrNot() {
-            $choice = $this->randomizeChoice(); 
-            return $choice === 1;
         }
     }
 
